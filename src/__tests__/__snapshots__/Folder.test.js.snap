@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correclty 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <Text />
+    <Text />
+  </View>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      undefined%
+    </Text>
+  </View>
+</View>
+`;
