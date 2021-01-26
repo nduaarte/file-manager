@@ -1,13 +1,15 @@
 import React from 'react';
 import { View } from 'react-native';
+import { ThemeProvider } from 'styled-components';
 
+import { Colors } from './src/Colors';
 import Folder from './src/Components/Folder';
 
 export default function App() {
   return (
-    <View>
+    <ThemeProvider theme={Colors}>
       <Folder />
-    </View>
+    </ThemeProvider>
   );
 }
 
