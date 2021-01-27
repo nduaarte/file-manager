@@ -12,11 +12,11 @@ interface PropsTypes {
   percentage: number;
 }
 
-const Folder: React.FC<PropsTypes> = ({ color='#F2C8EE', title='Photos', quantity=4.256, percentage=25 }) => {
-  const { darkWhite } = useContext(ThemeContext);
+const Folder: React.FC<PropsTypes> = ({ color, title, quantity, percentage }) => {
+  const { darkWhite, turquoise, background } = useContext(ThemeContext);
 
+  // Para o react-native-progress funcionar corretamente.
   const refinedPercentage = percentage / 100;
-
   return(
     <Container>
       <Row>
@@ -30,6 +30,10 @@ const Folder: React.FC<PropsTypes> = ({ color='#F2C8EE', title='Photos', quantit
         <Percentage>{`${percentage}%`}</Percentage>
         <Bar
           progress={refinedPercentage}
+          color={turquoise}
+          unfilledColor={background}
+          borderWidth={0}
+          width={null}
         />
       </InfoContainer>
     </Container>

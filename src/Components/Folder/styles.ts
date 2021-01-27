@@ -2,11 +2,11 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   padding: 15px;
-  width: 37%;
-  height: 25%;
+  width: 42%;
+  height: 27%;
   border-radius: 20px;
   
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme }) => theme.graphite};
 `;
 
 export const Row = styled.View`
@@ -16,6 +16,8 @@ export const Row = styled.View`
 
 export const InfoContainer = styled.View`
   margin-top: 5px;
+  height: 56%;
+  justify-content: space-around;
 `;
 
 export const Title = styled.Text`
@@ -27,11 +29,11 @@ export const Title = styled.Text`
 export const Quantity = styled.Text`
   font-weight: bold;
   color: ${({ theme }) => theme.grey};
-  margin: 2px 0;
 `;
 
 export const Percentage = styled.Text`
   color: ${({ theme }) => theme.white};
   font-size: 17px;
+  font-weight: bold;
 `;
 
