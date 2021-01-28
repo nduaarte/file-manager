@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { renderer } from '@testing-library/react-native';
 import Folder from '../Components/Folder';
 
 test('renders correclty', () => {

@@ -17,6 +17,7 @@ const Folder: React.FC<PropsTypes> = ({ color, title, quantity, percentage }) =>
 
   // Para o react-native-progress funcionar corretamente.
   const refinedPercentage = percentage / 100;
+
   return(
     <Container>
       <Row>
